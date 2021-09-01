@@ -1,0 +1,11 @@
+{
+  "name": "up-task-node",
+  "version": "1.0.0",
+  "description": "Up Task with Node and MVC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ignacio H.",
+  "license": "ISC"
+}
