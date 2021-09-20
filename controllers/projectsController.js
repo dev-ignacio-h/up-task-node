@@ -1,9 +1,5 @@
 const projectHome = (req, res) => {
-  res.send('Index');
+  res.render('index');
 };
 
-const nosotrosController = (req, res) => {
-  res.send('Nosotros');
-};
-
-module.exports = { projectHome, nosotrosController };
+module.exports = { projectHome };
