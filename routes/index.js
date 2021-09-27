@@ -3,12 +3,13 @@ const router = express.Router();
 // import controllers
 const {
   projectHome,
-  nosotrosController,
+  projectForm,
 } = require('../controllers/projectsController');
 
 const routes = () => {
   // route to home
   router.get('/', projectHome);
+  router.get('/new-project', projectForm);
 
   return router;
 };

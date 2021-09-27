@@ -5,6 +5,9 @@ const path = require('path');
 // create express app
 const app = express();
 
+// where load static files
+app.use(express.static('public'));
+
 // eneable pug
 app.set('view engine', 'pug');
 

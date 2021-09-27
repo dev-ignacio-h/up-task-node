@@ -6,7 +6,8 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(rel='stylesheet', href='/css/app.css', attr)
     link(rel='stylesheet', href='/css/normalize.css', attr)
-    title #{pageName}
+    //- title #{pageName}
+    title=pageName
   body
     header.barra
       h1 UpTask - Administrador de Proyectos
@@ -14,7 +15,7 @@ html(lang='en')
     main.contenedor
       aside.contenedor-proyectos
         .panel.crear-proyecto
-          a(href="#" class="boton") Nuevo Proyecto
+          a(href="/new-project" class="boton") Nuevo Proyecto
             span +
         .panel.lista-proyectos
           h2 Proyectos

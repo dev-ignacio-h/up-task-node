@@ -1,5 +1,9 @@
 const projectHome = (req, res) => {
-  res.render('index');
+  res.render('index', { pageName: 'Proyectos' });
 };
 
-module.exports = { projectHome };
+const projectForm = (req, res) => {
+  res.render('newProject', { pageName: 'Nuevo Proyecto' });
+};
+
+module.exports = { projectHome, projectForm };
