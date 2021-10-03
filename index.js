@@ -14,6 +14,10 @@ app.set('view engine', 'pug');
 // add views folder
 app.set('views', path.join(__dirname, './views'));
 
+// eneable body parser
+app.use(express.urlencoded({ extended: true }))
+// app.use(express.json())
+
 app.use('/', routes());
 
 app.listen(5000);
